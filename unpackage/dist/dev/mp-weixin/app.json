@@ -1,6 +1,10 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/Car/Car",
+    "pages/Me/Me",
+    "pages/ZT/ZT",
+    "pages/FL/FL"
   ],
   "subPackages": [],
   "window": {
@@ -8,6 +12,44 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#aa0000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/img/ic_menu_choice_nor.png",
+        "selectedIconPath": "static/img/ic_menu_choice_pressed.png"
+      },
+      {
+        "pagePath": "pages/ZT/ZT",
+        "text": "专题",
+        "iconPath": "static/img/ic_menu_topic_nor.png",
+        "selectedIconPath": "static/img/ic_menu_topic_pressed.png"
+      },
+      {
+        "pagePath": "pages/FL/FL",
+        "text": "分类",
+        "iconPath": "static/img/ic_menu_sort_nor.png",
+        "selectedIconPath": "static/img/ic_menu_sort_pressed.png"
+      },
+      {
+        "pagePath": "pages/Car/Car",
+        "text": "购物车",
+        "iconPath": "static/img/ic_menu_shoping_nor.png",
+        "selectedIconPath": "static/img/ic_menu_shoping_pressed.png"
+      },
+      {
+        "pagePath": "pages/Me/Me",
+        "text": "我的",
+        "iconPath": "static/img/ic_menu_me_nor.png",
+        "selectedIconPath": "static/img/ic_menu_me_pressed.png"
+      }
+    ]
   },
   "permission": {},
   "usingComponents": {}
