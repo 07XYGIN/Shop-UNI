@@ -3,8 +3,9 @@
     "pages/index/index",
     "pages/Car/Car",
     "pages/Me/Me",
-    "pages/ZT/ZT",
-    "pages/FL/FL"
+    "pages/FL/FL",
+    "pages/List/List",
+    "pages/ShopingList/index"
   ],
   "subPackages": [],
   "window": {
@@ -24,12 +25,6 @@
         "text": "首页",
         "iconPath": "static/img/ic_menu_choice_nor.png",
         "selectedIconPath": "static/img/ic_menu_choice_pressed.png"
-      },
-      {
-        "pagePath": "pages/ZT/ZT",
-        "text": "专题",
-        "iconPath": "static/img/ic_menu_topic_nor.png",
-        "selectedIconPath": "static/img/ic_menu_topic_pressed.png"
       },
       {
         "pagePath": "pages/FL/FL",

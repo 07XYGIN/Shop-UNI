@@ -10078,6 +10078,136 @@ module.exports = {
 };
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
+/***/ }),
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */
+/*!***********************************!*\
+  !*** E:/XYGin/XM/uni/Api/List.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _request = __webpack_require__(/*! ../Utils/request.js */ 44);
+module.exports = {
+  Get: function Get() {
+    return (0, _request.request)({
+      url: '/index/index',
+      method: "GET"
+    });
+  }
+};
+module.exports = {
+  Current: function Current(data) {
+    return (0, _request.request)({
+      url: '/catalog/current?',
+      method: 'GET',
+      data: data
+    });
+  }
+};
+
+/***/ }),
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */
+/*!**************************************!*\
+  !*** E:/XYGin/XM/uni/Api/getList.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _request = __webpack_require__(/*! ../Utils/request.js */ 44);
+module.exports = {
+  GetData: function GetData(data) {
+    return (0, _request.request)({
+      url: '/brand/detail?',
+      method: "GET",
+      data: data
+    });
+  }
+};
+
+/***/ }),
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */
+/*!***************************************!*\
+  !*** E:/XYGin/XM/uni/Api/shopList.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _request = __webpack_require__(/*! ../Utils/request.js */ 44);
+module.exports = {
+  GetShop: function GetShop(data) {
+    return (0, _request.request)({
+      url: '/goods/detail?',
+      method: "GET",
+      data: data
+    });
+  }
+};
+
 /***/ })
 ]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

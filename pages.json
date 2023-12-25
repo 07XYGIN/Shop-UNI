@@ -17,17 +17,18 @@
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
-		},
-		{
-			"path": "pages/ZT/ZT",
-			"style": {
-				"navigationBarTitleText": "专题"
-			}
 		},{
 			"path": "pages/FL/FL",
 			"style": {
 				"navigationBarTitleText": "分类"
 			}
+		},{
+			"path": "pages/List/List",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},{
+			"path": "pages/ShopingList/index"
 		}
 	],
 	"tabBar": {
@@ -42,11 +43,6 @@
 				"selectedIconPath": "static/img/ic_menu_choice_pressed.png"
 			},
 			{
-				"pagePath": "pages/ZT/ZT",
-				"text": "专题",
-				"iconPath": "static/img/ic_menu_topic_nor.png",
-				"selectedIconPath": "static/img/ic_menu_topic_pressed.png"
-			},{
 				"pagePath": "pages/FL/FL",
 				"text": "分类",
 				"iconPath": "static/img/ic_menu_sort_nor.png",

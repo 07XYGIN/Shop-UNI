@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 Object.defineProperty(exports, "__esModule", {
@@ -294,7 +294,10 @@ var _default = {
             switch (_context2.prev = _context2.next) {
               case 0:
                 console.log(e.id);
-              case 1:
+                uni.navigateTo({
+                  url: "/pages/List/List?id=".concat(e.id)
+                });
+              case 2:
               case "end":
                 return _context2.stop();
             }
@@ -309,7 +312,9 @@ var _default = {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                console.log(e.id);
+                uni.navigateTo({
+                  url: "/pages/ShopingList/index?id=".concat(e.id)
+                });
               case 1:
               case "end":
                 return _context3.stop();
@@ -325,7 +330,9 @@ var _default = {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                console.log(e.id);
+                uni.navigateTo({
+                  url: "/pages/ShopingList/index?id=".concat(e.id)
+                });
               case 1:
               case "end":
                 return _context4.stop();
@@ -341,7 +348,9 @@ var _default = {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                console.log(e.id);
+                uni.navigateTo({
+                  url: "/pages/ShopingList/index?id=".concat(e.id)
+                });
               case 1:
               case "end":
                 return _context5.stop();
@@ -356,6 +365,7 @@ var _default = {
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

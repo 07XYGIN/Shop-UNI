@@ -110,18 +110,27 @@
 			//跳转一
 			async go(e) {
 				console.log(e.id);
+				uni.navigateTo({
+					url:`/pages/List/List?id=${e.id}`
+				})
 			},
 			//跳转二
 			async get(e) {
-				console.log(e.id);
+				uni.navigateTo({
+					url:`/pages/ShopingList/index?id=${e.id}`
+				})
 			},
 			//导航三
 			async GetList(e) {
-				console.log(e.id);
+				uni.navigateTo({
+					url:`/pages/ShopingList/index?id=${e.id}`
+				})
 			},
 			//跳转四
 			async shopList(e) {
-				console.log(e.id);
+				uni.navigateTo({
+					url:`/pages/ShopingList/index?id=${e.id}`
+				})
 			}
 		},
 		onLoad() {

@@ -1,0 +1,1 @@
+<view class="content data-v-9e50c874"><image src="{{data.app_list_pic_url}}" class="data-v-9e50c874"></image><text id="t" class="data-v-9e50c874">{{data.name}}</text><view class="text data-v-9e50c874">{{''+data.simple_desc+''}}</view></view>
