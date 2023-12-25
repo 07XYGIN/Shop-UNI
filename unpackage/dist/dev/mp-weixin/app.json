@@ -37,12 +37,6 @@
         "text": "购物车",
         "iconPath": "static/img/ic_menu_shoping_nor.png",
         "selectedIconPath": "static/img/ic_menu_shoping_pressed.png"
-      },
-      {
-        "pagePath": "pages/Me/Me",
-        "text": "我的",
-        "iconPath": "static/img/ic_menu_me_nor.png",
-        "selectedIconPath": "static/img/ic_menu_me_pressed.png"
       }
     ]
   },

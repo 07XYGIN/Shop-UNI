@@ -109,4 +109,15 @@
 .rich .imagess [src].data-v-7b20cca4 {
   width: 66vh;
 }
+.car.data-v-7b20cca4 {
+  width: 100%;
+  height: 190rpx;
+  background-color: #b4282d;
+  position: fixed;
+  z-index: 999;
+  top: 1349rpx;
+}
+.car .btn.data-v-7b20cca4 {
+  height: 160rpx;
+}
 

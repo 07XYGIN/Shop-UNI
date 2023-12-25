@@ -10208,6 +10208,44 @@ module.exports = {
   }
 };
 
+/***/ }),
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */
+/*!**********************************!*\
+  !*** E:/XYGin/XM/uni/Api/Car.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _request = __webpack_require__(/*! ../Utils/request.js */ 44);
+module.exports = {
+  AddCar: function AddCar(data) {
+    return (0, _request.request)({
+      url: '/cart/add',
+      method: "POST",
+      data: data
+    });
+  },
+  GetCarList: function GetCarList() {
+    return (0, _request.request)({
+      url: '/cart/index',
+      method: 'GET'
+    });
+  },
+  DelList: function DelList(data) {
+    return (0, _request.request)({
+      url: '/cart/delete',
+      method: 'POST',
+      data: data
+    });
+  }
+};
+
 /***/ })
 ]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

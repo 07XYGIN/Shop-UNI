@@ -24,6 +24,11 @@
 				<text class="b">{{item.value}}</text>
 			</view>
 		</view>
+		<view class="car">
+			<view class="btn">
+				<button @click="addCar()">加入购物车</button>
+			</view>
+		</view>
 		<view class="rich">
 			<rich-text class="imagess" :nodes="info.goods_desc" id="richtext"></rich-text>
 		</view>
@@ -34,6 +39,7 @@
 	import {
 		GetShop
 	} from '../../Api/shopList.js'
+	import {AddCar} from '../../Api/Car.js'
 	export default {
 		data() {
 			return {
@@ -44,7 +50,12 @@
 				info: [],
 				issue: [],
 				productList: [],
-				strings: ''
+				strings: '',
+				from:{
+					goodsId: '',
+					number: 1,
+					productId: ''
+				}
 			}
 		},
 		methods: {
@@ -66,7 +77,18 @@
 				this.info = info;
 				this.issue = issue;
 				this.productList = productList;
-				console.log(this.info.goods_desc);
+				this.from.goodsId = productList[0].goods_id
+				this.from.productId = productList[0].id
+				console.log(this);
+			},
+			async addCar(){
+				let res = await AddCar({
+					goodsId :this.from.goodsId,
+					productId:this.from.productId,
+					number: 1
+					
+				})
+				console.log(res);
 			}
 		},
 		onLoad: function(option) {
@@ -177,6 +199,19 @@
 
 		.imagess [src] {
 			width: 66vh;
+		}
+	}
+
+	.car {
+		width: 100%;
+		height: 190rpx;
+		background-color: #b4282d;
+		position: fixed;
+		z-index: 999;
+		top: 1349rpx;
+
+		.btn {
+			height: 160rpx;
 		}
 	}
 </style>

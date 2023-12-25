@@ -61,6 +61,12 @@ exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 40));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 42));
 var _shopList = __webpack_require__(/*! ../../Api/shopList.js */ 103);
+var _Car = __webpack_require__(/*! ../../Api/Car.js */ 107);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -103,7 +109,12 @@ var _default = {
       info: [],
       issue: [],
       productList: [],
-      strings: ''
+      strings: '',
+      from: {
+        goodsId: '',
+        number: 1,
+        productId: ''
+      }
     };
   },
   methods: {
@@ -128,13 +139,40 @@ var _default = {
                 _this.info = info;
                 _this.issue = issue;
                 _this.productList = productList;
-                console.log(_this.info.goods_desc);
-              case 11:
+                _this.from.goodsId = productList[0].goods_id;
+                _this.from.productId = productList[0].id;
+                console.log(_this);
+              case 13:
               case "end":
                 return _context.stop();
             }
           }
         }, _callee);
+      }))();
+    },
+    addCar: function addCar() {
+      var _this2 = this;
+      return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee2() {
+        var res;
+        return _regenerator.default.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return (0, _Car.AddCar)({
+                  goodsId: _this2.from.goodsId,
+                  productId: _this2.from.productId,
+                  number: 1
+                });
+              case 2:
+                res = _context2.sent;
+                console.log(res);
+              case 4:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
       }))();
     }
   },
